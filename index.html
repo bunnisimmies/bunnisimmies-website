@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>bunnisimmies — a creative universe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Italiana&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ANIMATED SNOW BACKGROUND -->
+    <div class="snow-container" id="snow-container"
+        aria-hidden="true"></div>
+    
+    
+    <!-- RANDOM SHOOTING STARS -->
+    <div
+    class="shooting-stars"
+    id="shooting-stars"
+    aria-hidden="true"
+    ></div>
+
+
+    <!-- CUSTOM SATURN CURSOR -->
+    <div
+    class="custom-cursor"
+    id="custom-cursor"
+    aria-hidden="true"
+    >
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+    </div>
+
+    <div
+    class="cursor-sparkles"
+    id="cursor-sparkles"
+    aria-hidden="true"
+    ></div>
+
+
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="#home">bunnisimmies.</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">about</a>
+      <a href="#universe">universe</a>
+      <a href="#creations">creations</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <!-- CELESTIAL MUSIC PLAYER -->
+    <div class="music-player">
+    <button
+        id="music-toggle"
+        class="music-toggle"
+        type="button"
+        aria-label="Play background music"
+        aria-pressed="false"
+    >
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span class="music-label">SOUND OFF</span>
+        <span class="music-indicator" aria-hidden="true"></span>
+    </button>
+    </div>
+
+    <audio
+    id="background-music"
+    src="assets/music/somewhere_among_the_stars_loop.wav"
+    preload="auto"
+    loop
+    ></audio>
+
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <p class="eyebrow">
+        THE BUNNISIMMIES ARCHIVE
+      </p>
+
+      <h1>
+        A world<br />
+        <em>of my own.</em>
+      </h1>
+
+      <p class="hero-description">
+        A world shaped by imagination, 
+        where every character has a story worth telling.
+      </p>
+
+    <!-- SOCIAL LINKS -->
+    <div class="hero-socials">
+    
+    <a
+        href="https://www.tiktok.com/@bunnisimmies"
+        class="hero-social-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        TIKTOK <span>↗</span>
+    </a>
+
+    <a
+        href="https://www.youtube.com/@bunnisimmies"
+        class="hero-social-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        YOUTUBE <span>↗</span>
+    </a>
+
+    </div>
+
+    
+    <div class="hero-discord">
+    <p class="discord-eyebrow">THE COMMUNITY</p>
+
+    <h3>Enter the <em>Heavenly Realm.</em></h3>
+
+    <div class="discord-panel">
+        <div class="discord-panel-top">
+        <div class="discord-server-icon">✧</div>
+
+        <div class="discord-server-info">
+            <strong>☁️﹐BL﹕the heavenly realm﹒天界</strong>
+            <span>A sanctuary beyond the stars.</span>
+        </div>
+
+        <span class="discord-live-label">● LIVE</span>
+        </div>
+
+        <div class="discord-panel-bottom">
+        <span>Members online</span>
+        <strong id="discord-online">—</strong>
+        </div>
+
+        <a
+        id="discord-join"
+        href="https://discord.gg/EbqZsvZ9Aq"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="discord-join-btn"
+        >
+        JOIN THE SERVER ↗
+        </a>
+    </div>
+    </div>
+
+
+      <span class="hero-number">
+        EST. 2025
+      </span>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+
+    <p class="eyebrow">01 / THE CREATOR</p>
+
+    <h2>A little about <em>me.</em></h2>
+
+    <div class="about-content">
+
+        <p class="about-intro">
+        I'm Ezra, a 24-year-old digital creator.
+        </p>
+
+        <p>
+        I specialise in character-driven storytelling
+        through The Sims 4, blending animation, visual
+        design, and original narratives. My work explores
+        relationships, identity, and the complexities of
+        fictional worlds, with a particular focus on
+        BL and Omegaverse storytelling.
+        </p>
+
+        <p>
+        What began as a creative outlet has become an
+        ever-evolving collection of characters, stories,
+        and ideas.
+        </p>
+
+    </div>
+
+    <!-- GENRES -->
+    <div class="about-genres">
+
+        <p class="genre-heading">GENRES & INTERESTS</p>
+
+        <div class="genre-list">
+        <span class="genre-tag">BOYS' LOVE</span>
+        <span class="genre-tag">OMEGAVERSE</span>
+        <span class="genre-tag">ROMANCE</span>
+        <span class="genre-tag">DRAMA</span>
+        <span class="genre-tag">SLICE OF LIFE</span>
+        <span class="genre-tag">ANIMATION</span>
+        <span class="genre-tag">THE SIMS 4</span>
+        </div>
+
+    </div>
+
+    </section>
+
+
+    <!-- FAMILY ARCHIVE -->
+    <section class="section" id="universe">
+
+      <p class="eyebrow">02 / THE FAMILY ARCHIVE</p>
+
+      <h2>Meet the <em>family.</em></h2>
+
+      <p>
+        Five hearts, one family. Get to know the
+        characters behind the stories.
+      </p>
+
+      <div
+        class="character-carousel"
+        aria-label="Family character gallery"
+        aria-roledescription="carousel"
+      >
+
+        <!-- CHARACTER SLIDES -->
+        <div class="carousel-stage" id="character-stage">
+
+          <!-- CIEL -->
+          <article class="carousel-slide" inert>
+            <div class="carousel-image">
+              <img
+                src="assets/images/ciel.png"
+                alt="Portrait of Ciel"
+              />
+            </div>
+
+            <div class="carousel-details">
+              <h3>Ciel</h3>
+              <p><strong>Age:</strong> 24</p>
+              <p><strong>Birthday:</strong> 20 January 2002</p>
+              <p><strong>Secondary Gender:</strong> Enigma</p>
+            </div>
+          </article>
+
+          
+          <!-- NASH -->
+          <article class="carousel-slide active">
+            <div class="carousel-image">
+              <img
+                src="assets/images/nash.png"
+                alt="Portrait of Nash"
+              />
+            </div>
+
+            <div class="carousel-details">
+              <h3>Nash</h3>
+              <p><strong>Age:</strong> 23</p>
+              <p><strong>Birthday:</strong> 12 October 2003</p>
+              <p><strong>Secondary Gender:</strong> Alpha</p>
+            </div>
+          </article>
+
+          <!-- ELIOS -->
+          <article class="carousel-slide" inert>
+            <div class="carousel-image">
+              <img
+                src="assets/images/elios.png"
+                alt="Portrait of Elios"
+              />
+            </div>
+
+            <div class="carousel-details">
+              <h3>Elios</h3>
+              <p><strong>Age:</strong> 6</p>
+              <p><strong>Birthday:</strong> 18 March 2020</p>
+              <p><strong>Secondary Gender:</strong> Omega</p>
+            </div>
+          </article>
+
+          <!-- MILO -->
+          <article class="carousel-slide" inert>
+            <div class="carousel-image">
+              <img
+                src="assets/images/milo.png"
+                alt="Portrait of Milo"
+              />
+            </div>
+
+            <div class="carousel-details">
+              <h3>Milo</h3>
+              <p><strong>Age:</strong> 2</p>
+              <p><strong>Birthday:</strong> 26 September 2024</p>
+              <p><strong>Secondary Gender:</strong> Enigma</p>
+            </div>
+          </article>
+
+          <!-- AMELIE -->
+          <article class="carousel-slide" inert>
+            <div class="carousel-image">
+              <img
+                src="assets/images/amelie.png"
+                alt="Portrait of Amelie"
+              />
+            </div>
+
+            <div class="carousel-details">
+              <h3>Amelie</h3>
+              <p><strong>Age:</strong> 2</p>
+              <p><strong>Birthday:</strong> 26 September 2024</p>
+              <p><strong>Secondary Gender:</strong> Alpha</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CAROUSEL CONTROLS -->
+        <div class="carousel-controls">
+          <button
+            class="carousel-arrow"
+            id="prev-character"
+            type="button"
+            aria-label="Previous character"
+          >
+            &#8592;
+          </button>
+
+          <span
+            class="carousel-counter"
+            id="carousel-counter"
+          >
+            01 / 05
+          </span>
+
+          <button
+            class="carousel-arrow"
+            id="next-character"
+            type="button"
+            aria-label="Next character"
+          >
+            &#8594;
+          </button>
+        </div>
+
+        <!-- CAROUSEL DOTS -->
+        <div
+          class="carousel-dots"
+          id="carousel-dots"
+          aria-label="Choose a character"
+        ></div>
+
+        <!-- CHARACTER BIOGRAPHY -->
+        <div class="character-biography">
+
+          <p class="biography-label" id="biography-label">
+            GET TO KNOW CIEL
+          </p>
+
+          <h3 class="biography-title" id="biography-title">
+            A king with a story untold.
+          </h3>
+
+          <p class="biography-text" id="biography-text">
+            Heir to the Kwon dynasty and King of Del Sol Valley, 
+            Ciel carries the weight of a powerful legacy. 
+            Behind his composed exterior is a man learning that love 
+            and family can offer a life beyond perfection.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <!-- CREATIONS ARCHIVE -->
+    <section class="section creations" id="creations">
+
+    <!-- SECTION HEADING -->
+    <div class="section-heading">
+        <p class="section-label">
+        03 / THE CREATIONS ARCHIVE
+        </p>
+
+        <h2>The <em>collection.</em></h2>
+
+        <p class="creations-intro">
+        A curated archive of original animations,
+        created for The Sims 4.
+        </p>
+    </div>
+
+    <!-- COLLECTION CARD -->
+    <div class="collection-card">
+
+        <!-- AUTOPLAYING CIEL VIDEO -->
+        <div class="collection-media">
+        <video
+            class="collection-feature-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            aria-label="Cinematic animation of Ciel"
+        >
+            <source
+            src="assets/images/ciel_render_v2.mp4"
+            type="video/mp4"
+            />
+        </video>
+        </div>
+
+        <!-- COLLECTION INFORMATION -->
+        <div class="collection-info">
+
+        <div class="collection-title-row">
+            <div>
+            <p class="collection-category">
+                THE SIMS 4 / PERSONAL ANIMATIONS PACK
+            </p>
+
+            <h3>
+                PERSONAL ANIMATIONS PACK - VOL. 01
+            </h3>
+            </div>
+
+            <span class="collection-year">2026</span>
+        </div>
+
+        <p class="collection-description">
+            A collection of custom animations for
+            character-driven storytelling.
+        </p>
+
+        
+        <!-- ANIMATION PACK DOWNLOAD -->
+        <div class="collection-actions">
+        <a
+            href="assets/packages/bunnisimmies_personal_animations.package"
+            download="bunnisimmies_personal_animations.package"
+            class="collection-btn collection-download-btn"
+            id="collection-download-btn"
+        >
+            DOWNLOAD ANIMATION PACK ↓
+        </a>
+        </div>
+
+
+        <p class="collection-status">
+            version 1.0 released.
+        </p>
+
+        </div>
+
+
+    <!-- REQUIRED ACCESSORIES -->
+    <details class="collection-requirements">
+
+    <summary>
+        <span>
+        <strong>Required accessories</strong>
+        <small>
+            Additional custom content & creator credits.
+        </small>
+        </span>
+
+        <span class="requirements-arrow"
+            aria-hidden="true">+</span>
+    </summary>
+
+    <div class="requirements-content">
+
+        <p class="requirements-intro">
+        Certain animations require additional accessories
+        to display correctly. Please download them from
+        their original creators using the links below.
+        </p>
+
+        <div class="accessory-list">
+
+        <!-- ACCESSORY 001 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 001</span>
+            <h4>Shark Plushie</h4>
+            <p class="accessory-creator">Created by ashwwa</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/ashwwa/posts/ashwwa-summer-54559489"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 002 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 002</span>
+            <h4>Bear Cookie & Bear Cookie Tray</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/advent-calendar-145380144"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 003 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 003</span>
+            <h4>Churro Accessory</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/street-food-acc-151405827"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 004 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 004</span>
+            <h4>Snack & Drink Accessory</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/street-food-acc-151405827"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 005 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 005</span>
+            <h4>Dango Accessory</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/adeline-acc-and-79092804"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 006 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 006</span>
+            <h4>Summer Drink Accessory</h4>
+            <p class="accessory-creator">Created by Backtrack</p>
+            </div>
+
+            <a
+            href="https://legacy.curseforge.com/sims4/create-a-sim/beach-drinks-poses"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 007 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 007</span>
+            <h4>Slumber Teddy</h4>
+            <p class="accessory-creator">Created by ashwwa</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/ashwwa/posts/2023-dec-02-04-94405604"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 008 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 008</span>
+            <h4>Baby Onesie</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/random-acc-for-3-89714502"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        <!-- ACCESSORY 009 -->
+        <div class="accessory-entry">
+            <div class="accessory-details">
+            <span class="accessory-number">ACCESSORY 009</span>
+            <h4>Baby Shoes</h4>
+            <p class="accessory-creator">Created by Mel Bennett</p>
+            </div>
+
+            <a
+            href="https://www.patreon.com/melbennett/posts/growing-us-151405105"
+            class="accessory-download-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            GET ACCESSORY ↗
+            </a>
+        </div>
+
+        </div>
+
+        <!-- CREATOR CREDIT NOTICE -->
+        <p class="accessory-disclaimer">
+        All third-party accessories belong to their
+        respective creators and are not included in
+        this animation pack. Please respect each
+        creator's terms of use.
+        </p>
+
+    </div>
+    </details>
+
+    </div>
+    <!-- END COLLECTION CARD -->
+
+    </section>
+    <!-- END CREATIONS ARCHIVE -->
+
+
+
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+
+    <div class="contact-inner">
+
+        <p class="eyebrow">04 / LET'S CONNECT</p>
+
+        <h2>
+        Every story begins with
+        <em>a conversation.</em>
+        </h2>
+
+        <p class="contact-intro">
+        For collaborations, commissions, and creative
+        enquiries, my universe is always open to
+        new possibilities.
+        </p>
+
+        <!-- DISCORD CONTACT CARD -->
+        <div class="contact-card">
+
+        <span class="contact-card-symbol"
+                aria-hidden="true">✧</span>
+
+        <p class="contact-card-label">
+            AN OPEN INVITATION
+        </p>
+
+        <h3>
+            Let's create something
+            <em>beautiful.</em>
+        </h3>
+
+        <p class="contact-card-description">
+            Have a story to tell or a project in mind?
+            Reach out to me on Discord.
+        </p>
+
+        <a
+            href="https://discord.com/users/1337059413554499618"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-discord-btn"
+        >
+            MESSAGE ME ON DISCORD
+            <span aria-hidden="true">↗</span>
+        </a>
+
+        <p class="contact-card-note">
+            Opens my Discord profile.
+        </p>
+
+        </div>
+
+        <!-- CELESTIAL FAREWELL -->
+        <div class="contact-farewell">
+
+        <span class="farewell-star"
+                aria-hidden="true">✧</span>
+
+        <p>Until our worlds meet again.</p>
+
+        <a href="#home" class="back-to-stars">
+            BACK TO THE STARS ↑
+        </a>
+
+        </div>
+
+    </div>
+
+    </section>
+    <!-- END CONTACT -->
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 bunnisimmies.</span>
+    <span>made with imagination ♡</span>
+  </footer>
+
+</body>
+</html>
